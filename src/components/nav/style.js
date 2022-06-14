@@ -43,5 +43,8 @@ margin: 0 auto;
 display: flex;
 align-items: center;
 justify-content: space-between;
+@media screen and (max-width:1250px){
+    margin: 0 2rem;
+}
 `
 

@@ -1,19 +1,21 @@
 import * as A from './style'
-import CuieAnime from '../public/assets/animeBunni.jpeg'
-import { Texto } from './texto'
+import { personagens } from './personagens'
 
 export const Container = () => {
 return(
     <A.SegurandoContainer>
       <A.Container>
-       <A.ContainerTexto>
-        <A.BoxTitulo>${Texto.NomePerso.Bunni}</A.BoxTitulo>
-        <A.BoxTexto>${Texto.Bunni}</A.BoxTexto>
-        </A.ContainerTexto>
-        <div>
-        <A.ContainerImagen src={CuieAnime}/>
-        </div>
-       
+        {personagens.map((itens)=>(
+          <>
+           <A.ContainerTexto>
+          <A.BoxTitulo>{itens.nome}</A.BoxTitulo>
+          <A.BoxTexto>{itens.descricao}</A.BoxTexto>
+          </A.ContainerTexto>
+          <A.SegurandoImagen>
+          <A.ContainerImagen src={itens.foto}/>
+          </A.SegurandoImagen>
+          </>
+        ))}
       </A.Container>
       </A.SegurandoContainer>
 )

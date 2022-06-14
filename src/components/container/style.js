@@ -3,6 +3,8 @@ import styled  from "styled-components";
 export const SegurandoContainer = styled.div`
 width: 100%;
 background-color: black;
+margin-top: 50px;
+
 `
 export const Container = styled.div`
 display: grid;
@@ -10,6 +12,8 @@ grid-template-columns: repeat(2,1fr);
 max-width: 1200px;
 margin: 0 auto;
 align-items: center;
+gap: 40px;
+background-color: black;
 @media screen and (max-width:1250px){
     margin: 0 2rem;
     grid-template-columns: 1fr;
@@ -33,4 +37,7 @@ line-height: 2rem;
 export const ContainerImagen = styled.img`
 width: 100%;
 display: block;
+`
+export const SegurandoImagen = styled.div`
+height: 500px;
 `
