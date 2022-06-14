@@ -13,25 +13,23 @@ cursor: pointer;
 `
 export const NavBar = styled.ul`
 display: flex;
+gap: 2.5rem;
 `
 export const Links = styled.a`
 color: white;
-padding: 0 2rem;
+padding: 2rem 0;
 font-size: 2rem;
 font-weight: 00;
 transition: 0.5s;
 text-decoration: none;
 position: relative;
-&:hover{
-  background-color: white;
-  color: black;
-}
+display: inline-block;
 &::after{
   content: "";
   width:0;
-  height: 5px;
+  height: 3px;
   display:block;
-  background-color: red;
+  background-color: white;
   position: absolute;
   transition: 0.5s;
 }
